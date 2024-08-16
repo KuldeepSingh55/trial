@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100%; */
+    height: 100vh;
+    cursor: none;
+    background-color: black;
+}
+/* .pointer{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+} */
+
+.cursor{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+}
+
+.pointer,
+.cursor{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}
